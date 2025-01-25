@@ -1,0 +1,45 @@
+.carousel {
+    padding: 16px;
+  }
+  
+  .carousel-card {
+    background-color: #ff5c8d;
+    border-radius: 16px;
+    color: white;
+    padding: 24px;
+    position: relative;
+    text-align: left;
+  }
+  
+  .carousel-card h5 {
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+  
+  .carousel-card h2 {
+    font-size: 18px;
+    margin: 0 0 16px;
+  }
+  
+  .carousel-card button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .carousel-dots {
+    text-align: center;
+    margin-top: 12px;
+  }
+  
+  .carousel-dots span {
+    margin: 0 4px;
+    font-size: 18px;
+  }
+  
+  .active-dot {
+    color: #ff5c8d;
+  }
+  
