@@ -1,0 +1,35 @@
+.project-details {
+    padding: 16px;
+  }
+  
+  .project-details-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background-color: #fff;
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .project-status {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .project-code {
+    color: #666;
+  }
+  
+  .project-body p {
+    margin: 4px 0;
+  }
+  
+  .project-body strong {
+    color: #333;
+  }
+  

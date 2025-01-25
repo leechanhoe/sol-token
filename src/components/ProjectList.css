@@ -1,0 +1,27 @@
+.project-list {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .project-item {
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .project-item h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+  }
+  
+  .project-item p {
+    margin: 4px 0;
+    color: #666;
+  }
+  
+  .project-item strong {
+    color: #333;
+  }
+  
