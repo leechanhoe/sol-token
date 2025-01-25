@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
-import ProjectDetails from "./components/ProjectDetails";
+import ProjectDetails from "./pages/ProjectDetails";
 import MarketList from "./components/MarketList"; // 새로 추가할 컴포넌트
 
 function App() {
