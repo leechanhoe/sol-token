@@ -17,7 +17,7 @@ function Header() {
   return (
     <header className="header">
       <button className="back-button" onClick={handleBack}>←</button>
-      <h1>탄소배출권 거래하기</h1>
+      <h1>탄소배출권 투자하기</h1>
     </header>
   );
 }

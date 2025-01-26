@@ -7,9 +7,9 @@ function ProjectList() {
   const navigate = useNavigate();
 
   const projects = [
-    { id: 1, title: "중고거래를 통한 온실가스 감축 사업", amount: 4000, date: "24.01.01 - 25.01.01" },
-    { id: 2, title: "중고거래를 통한 온실가스 감축 사업", amount: 4000, date: "24.01.01 - 25.01.01" },
-    { id: 3, title: "중고거래를 통한 온실가스 감축 사업", amount: 4000, date: "24.01.01 - 25.01.01" },
+    { id: 1, title: "중고거래를 통한 온실가스 감축 사업", status: "진행중", amount: 4000, date: "24.01.01 - 25.01.01" },
+    { id: 2, title: "중고거래를 통한 온실가스 감축 사업", status: "진행중", amount: 4000, date: "24.01.01 - 25.01.01" },
+    { id: 3, title: "중고거래를 통한 온실가스 감축 사업", status: "진행중", amount: 4000, date: "24.01.01 - 25.01.01" },
   ];
 
   const handleNavigate = (id) => {
@@ -28,12 +28,15 @@ function ProjectList() {
           onClick={() => handleNavigate(project.id)} // 클릭 시 해당 ID로 이동
         >
           <h3>{project.title}</h3>
-          <p>{project.date}</p>
+          <p>{project.date} - <span className="project-status">{project.status}</span></p>
           <p>
             <span>예상 감축량</span> <strong>{project.amount} tCO₂eq</strong>
           </p>
         </div>
       ))}
+      <div className="more-button-container">
+        <button className="more-button">더보기</button>
+      </div>
     </section>
   );
 }

@@ -25,3 +25,30 @@
     color: #333;
   }
   
+  .project-list {
+    padding: 16px;
+  }
+  
+  .more-button-container {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .more-button {
+    background-color: #d9d9d9;
+    color: rgb(35, 35, 35);
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .more-button:hover {
+    background-color: #dedede;
+  }
+  
+  .project-status {
+    color: blue;
+    font-weight: bold;
+  }

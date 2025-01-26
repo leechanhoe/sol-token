@@ -10,7 +10,7 @@ function MarketList() {
 
   return (
     <section className="market-list">
-      <h2>탄소배출권 시장</h2>
+      <h1>탄소배출권 시장</h1>
       <p>프로젝트를 통해 얻은 크레딧을 거래해보세요</p>
       <ul>
         {markets.map((market) => (
