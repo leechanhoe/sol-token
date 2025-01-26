@@ -41,6 +41,12 @@
   color: #ff4e36;
 }
 
+.market-item .price {
+  font-weight: 700;
+  margin-right: 4px;
+  color: #ff3b3b;
+}
+
 .market-item .change {
   color: #ff4e36;
   font-size: 14px;
