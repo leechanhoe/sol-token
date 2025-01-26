@@ -69,6 +69,10 @@ function ProjectDetails() {
           ))}
         </ul>
       </div>
+      <div className="button-group">
+        <button className="purchase-button">보유권증서 구매</button>
+        <button className="sell-button">보유권증서 판매</button>
+      </div>
     </section>
   );
 }
