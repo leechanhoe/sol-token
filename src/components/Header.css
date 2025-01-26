@@ -3,25 +3,24 @@
   top: 0;
   display: flex;
   width: 100%;
+  align-items: center;
   height: 60px;
   padding: 0 16px;
   background-color: #fff;
   z-index: 1000;
 }
 
-.title {
+.header .title {
   font-family: "OneShinhan";
   font-size: 18px;
   font-weight: bold;
   font-weight: 500;
+  margin-left: 10px;
 }
 
 .back-button {
   width: 18px;
   height: 18px;
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 8px;
   background: none;
   border: none;
   cursor: pointer;

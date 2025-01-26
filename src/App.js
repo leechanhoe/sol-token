@@ -10,6 +10,7 @@ import ProjectList from "./components/ProjectList";
 import MarketList from "./components/MarketList";
 import EtfList from "./components/EtfList";
 import ProjectDetails from "./pages/ProjectDetails";
+import TradeDetails from "./pages/TradeDetails";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             }
           />
           <Route path="/projects/:id" element={<ProjectDetails />} />
+          <Route path="/trade/:name" element={<TradeDetails />} />
         </Routes>
       </div>
     </Router>
