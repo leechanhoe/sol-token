@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./EtfList.css";
 
 function EtfList() {
+  const navigate = useNavigate();
   const etfs = [
     {
       id: 1,
@@ -23,6 +25,10 @@ function EtfList() {
     },
   ];
 
+  const handleNavigate = (name) => {
+    navigate(`/trade/${name}`);
+  };
+
   return (
     <section className="etf-list">
       <p className="title">탄소배출권 ETF</p>
@@ -30,7 +36,11 @@ function EtfList() {
 
       <ul>
         {etfs.map((etf) => (
-          <li key={etf.id} className="etf-item">
+          <li
+            key={etf.id}
+            className="etf-item"
+            onClick={() => handleNavigate(etf.name)}
+          >
             <span className="name">{etf.name}</span>
             <span className="price">{etf.price.toLocaleString()}</span>
             <span className="change">{etf.change}</span>

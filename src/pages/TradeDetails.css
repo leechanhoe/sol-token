@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.header-title {
+  font-family: "OneShinhan";
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: 500;
+  width: 45%;
+}
+
+.header .back-button {
+  margin: 0;
+}
+
+.header-text {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red {
+  color: #ff3b3b;
+}
+
+.content {
+  padding: 0 16px;
+  margin-top: 60px;
+  background-color: #fff;
+}

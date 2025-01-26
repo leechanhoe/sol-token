@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./MarketList.css";
 
 function MarketList() {
+  const navigate = useNavigate();
   const markets = [
-    { id: 1, name: "탄소배출권", price: 12000, change: "+2.56%" },
+    { id: 1, name: "탄소배출권 토큰", price: 12000, change: "+2.56%" },
     { id: 2, name: "KAU25", price: 11400, change: "+2.56%" },
     {
       id: 3,
@@ -13,6 +15,10 @@ function MarketList() {
     },
   ];
 
+  const handleNavigate = (name) => {
+    navigate(`/trade/${name}`);
+  };
+
   return (
     <section className="market-list">
       <p className="title">탄소배출권 시장</p>
@@ -20,7 +26,11 @@ function MarketList() {
 
       <ul>
         {markets.map((market) => (
-          <li key={market.id} className="market-item">
+          <li
+            key={market.id}
+            onClick={() => handleNavigate(market.name)}
+            className="market-item"
+          >
             <span className="name">{market.name}</span>
             <span className="price">{market.price.toLocaleString()}</span>
             <p className="change">{market.change}</p>
