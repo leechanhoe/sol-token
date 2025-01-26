@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import Carousel from "./components/Carousel";
 import MenuBar from "./components/MenuBar";
 import InformationList from "./components/InformationList";
+
 import ProjectList from "./components/ProjectList";
 import MarketList from "./components/MarketList";
 import EtfList from "./components/EtfList";
