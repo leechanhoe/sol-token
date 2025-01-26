@@ -3,9 +3,9 @@ import "./MarketList.css";
 
 function MarketList() {
   const markets = [
-    { id: 1, name: "탄소배출권", price: 12000, change: "2.56%" },
-    { id: 2, name: "KAU25", price: 11400, change: "2.56%" },
-    { id: 3, name: "S&P GSCI Global Voluntary Carbon Liquidity Weighted (USD)", price: 11400, change: "2.56%" },
+    { id: 1, name: "탄소배출권", price: 12000, change: "+2.56%" },
+    { id: 2, name: "KAU25", price: 11400, change: "+2.56%" },
+    { id: 3, name: "S&P GSCI Global Voluntary Carbon Liquidity Weighted (USD)", price: 11400, change: "+2.56%" },
   ];
 
   return (

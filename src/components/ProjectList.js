@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProjectList.css";
-import Header from "../components/Header";
+import Header from "./Header";
 
 function ProjectList() {
   const navigate = useNavigate();

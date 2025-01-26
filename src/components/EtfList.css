@@ -1,26 +1,25 @@
-.market-list {
+.etf-list {
   padding: 16px;
-  border-bottom: 1px solid #ddd;
 }
 
-.market-list h2 {
+.etf-list h2 {
   margin-bottom: 8px;
   font-size: 18px;
   color: #333;
 }
 
-.market-list p {
+.etf-list p {
   margin-bottom: 16px;
   color: #666;
 }
 
-.market-list ul {
+.etf-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.market-item {
+.etf-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,12 +30,12 @@
   background-color: #fff;
 }
 
-.market-item .price {
+.etf-item .price {
   font-weight: bold;
   color: #333;
 }
 
-.market-item .change {
+.etf-item .change {
   color: red;
   font-size: 14px;
 }

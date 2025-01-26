@@ -4,8 +4,9 @@ import "./App.css";
 import Carousel from "./components/Carousel";
 import MenuBar from "./components/MenuBar";
 import InformationList from "./components/InformationList";
-import ProjectList from "./pages/ProjectList";
+import ProjectList from "./components/ProjectList";
 import MarketList from "./components/MarketList";
+import EtfList from "./components/EtfList";
 import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
               <>
                 <ProjectList />
                 <MarketList />
+                <EtfList />
               </>
             }
           />
