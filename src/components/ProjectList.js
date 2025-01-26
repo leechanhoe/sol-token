@@ -43,10 +43,10 @@ function ProjectList() {
           <div
             key={project.id}
             className="project-item"
-            onClick={handleNavigate}
+            onClick={() => handleNavigate(project.id)}
           >
             {/* 첫 번째 행 */}
-            <div className="row" onClick={() => handleNavigate(project.id)}>
+            <div className="row">
               <div className="col">
                 <p className="project-id">{project.projectId}</p>
                 <p className="project-title">{project.title}</p>
