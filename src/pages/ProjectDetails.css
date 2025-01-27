@@ -130,3 +130,23 @@
   .sell-button:hover {
     background-color: #096dd9;
   }
+
+  .invest-button {
+    background-color: #28a745; /* 초록색 */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .invest-button:hover {
+    background-color: #218838;
+  }
+
+  .reduction-amount {
+    color: #db0fcd;
+    font-weight: bold;
+  }

@@ -9,9 +9,12 @@ function ProjectDetails() {
   const projects = [
     {
       id: 1,
+      title: "롯데하이마트 수리서비스에 따른 온실가스 감축 사업",
       code: "PC302124062701",
       status: "Certification Pending",
+      type: "신규",
       location: "대한민국 (KR)",
+      reductionType: "감축 / 재활용",
       amount: 4000,
       dateStart: "2024.06.27",
       dateEnd: "2027.12.31",
@@ -31,17 +34,20 @@ function ProjectDetails() {
     },
     {
       id: 2,
-      code: "PC302124062701",
-      status: "Certification Pending",
+      title: "중고거래를 통한 온실가스 감축 사업",
+      code: "PC090923011001",
+      status: "Inactive",
+      type: "진행중",
       location: "대한민국 (KR)",
-      amount: 4000,
-      dateStart: "2024.06.27",
-      dateEnd: "2027.12.31",
-      monitoringDate: "-",
-      reductionDateStart: "2023.01.01",
-      reductionDateEnd: "2027.12.31",
-      method: "대체사업의 방법론",
-      company: "롯데하이마트",
+      reductionType: "감축 / 중고거래",
+      amount: 750050,
+      dateStart: "2023.01.11",
+      dateEnd: "2033.01.10",
+      monitoringDate: "1",
+      reductionDateStart: "2023.02.02",
+      reductionDateEnd: "2033.01.10",
+      method: "자원순환을 위한 중고거래 방법론",
+      company: "주식회사 중고나라",
       documents: [
         { name: "사업 계획서", url: "#" },
         { name: "모니터링 보고서", url: "#" },
@@ -53,17 +59,20 @@ function ProjectDetails() {
     },
     {
       id: 3,
-      code: "PC302124062701",
-      status: "Certification Pending",
+      title: "자전거 중고거래에 의한 온실가스 갑축사업",
+      code: "PC091123020302",
+      status: "Inactive",
+      type: "진행중",
       location: "대한민국 (KR)",
-      amount: 4000,
-      dateStart: "2024.06.27",
-      dateEnd: "2027.12.31",
-      monitoringDate: "-",
-      reductionDateStart: "2023.01.01",
-      reductionDateEnd: "2027.12.31",
-      method: "대체사업의 방법론",
-      company: "롯데하이마트",
+      reductionType: "감축 / 중고거래",
+      amount: 3380,
+      dateStart: "2023.01.16",
+      dateEnd: "2033.01.15",
+      monitoringDate: "1",
+      reductionDateStart: "2022.01.01",
+      reductionDateEnd: "2032.12.31",
+      method: "자원순환을 위한 중고거래 방법론",
+      company: "라이트브라더스",
       documents: [
         { name: "사업 계획서", url: "#" },
         { name: "모니터링 보고서", url: "#" },
@@ -84,10 +93,18 @@ function ProjectDetails() {
   return (
     <section className="project-details">
       <Header />
+      <br></br>
       <h2>프로젝트 상세</h2>
       <div className="project-info">
-        <p><strong>감축 / 세부분야:</strong> 감축 / 재활용</p>
-        <p><strong>예상 감축량:</strong> {project.amount} tCO₂eq</p>
+        <p><strong>프로젝트명:</strong> {project.title}</p>
+        <p>
+          <strong>프로젝트 상태:</strong>
+          <span className={`type ${project.type === "진행중" ? "type-in-progress" : "type-new"}`}>
+            {project.type}
+          </span>
+        </p>
+        <p><strong>감축 / 세부분야:</strong> {project.reductionType}</p>
+        <p><strong>예상 감축량:</strong> <span className="reduction-amount">{project.amount}</span> tCO₂eq</p>
         <p><strong>모니터링 회차:</strong> {project.monitoringDate}</p>
         <p>
           <strong>시작 / 종료일:</strong> {project.dateStart} ~ {project.dateEnd}
@@ -96,7 +113,7 @@ function ProjectDetails() {
           <strong>감축기간 시작 / 종료일:</strong> {project.reductionDateStart} ~ {project.reductionDateEnd}
         </p>
         <p><strong>방법론:</strong> {project.method}</p>
-        <p><strong>프로젝트 상태:</strong> {project.status}</p>
+        <p><strong>프로젝트 유형:</strong> {project.status}</p>
         <p><strong>프로젝트 ID:</strong> {project.code}</p>
         <p><strong>프로젝트 실행 기업:</strong> {project.company}</p>
       </div>
@@ -114,8 +131,16 @@ function ProjectDetails() {
         </ul>
       </div>
       <div className="button-group">
-        <button className="purchase-button">보유권증서 구매</button>
-        <button className="sell-button">보유권증서 판매</button>
+        {project.type === "신규" ? (
+          // '신규'일 때는 초록색 버튼 하나
+          <button className="invest-button">프로젝트 투자하기</button>
+        ) : (
+          // '진행중'일 때는 기존의 두 개의 버튼
+          <>
+            <button className="purchase-button">보유권증서 구매</button>
+            <button className="sell-button">보유권증서 판매</button>
+          </>
+        )}
       </div>
     </section>
   );
