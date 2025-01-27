@@ -148,11 +148,34 @@
   flex: 1;
 }
 
-.invest-button:hover {
-  background-color: #218838;
+.purchase-button {
+  background-color: #ff4d4f; /* 빨간색 */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 8px; /* 버튼 간격 */
 }
 
-.reduction-amount {
-  color: #db0fcd;
-  font-weight: bold;
+.purchase-button:hover {
+  background-color: #d9363e;
+}
+
+.sell-button {
+  background-color: #1890ff; /* 파란색 */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  margin-left: 8px; /* 버튼 간격 */
+}
+
+.sell-button:hover {
+  background-color: #096dd9;
 }

@@ -1,37 +1,69 @@
 import OrderBook from "../components/OrderBook";
 import backIcon from "../assets/arrow.svg";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import "./TradeDetails.css";
 import Tab from "../components/Tab";
 const TradeDetails = () => {
   const navigate = useNavigate();
 
   const { name } = useParams();
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const price = Number(params.get("price"));
 
-  const orderBookData = [
-    { price: 1128, amount: 50, type: "sell" },
-    { price: 1127, amount: 10, type: "sell" },
-    { price: 1126, amount: 6, type: "sell" },
-    { price: 1125, amount: 20, type: "sell" },
-    { price: 1124, amount: 6, type: "sell" },
-    { price: 1123, amount: 50, type: "sell" },
-    { price: 1122, amount: 10, type: "sell" },
-    { price: 1121, amount: 6, type: "sell" },
-    { price: 1120, amount: 20, type: "sell" },
-    { price: 1119, amount: 10, type: "sell" },
-    { price: 1118, amount: 10, type: "sell" },
-    { price: 1117, amount: 10, type: "buy" },
-    { price: 1116, amount: 6, type: "buy" },
-    { price: 1115, amount: 10, type: "buy" },
-    { price: 1114, amount: 6, type: "buy" },
-    { price: 1113, amount: 36, type: "buy" },
-    { price: 1112, amount: 60, type: "buy" },
-    { price: 1111, amount: 80, type: "buy" },
-    { price: 1110, amount: 10, type: "buy" },
-    { price: 1109, amount: 6, type: "buy" },
-    { price: 1108, amount: 36, type: "buy" },
-    { price: 1107, amount: 60, type: "buy" },
-  ];
+  const generateOrderBookData = (basePrice) => {
+    const sellData = [];
+    const buyData = [];
+
+    const price = Number(basePrice) || 1000;
+
+    const getPriceIncrement = (price) => {
+      if (price >= 1000000) return 1000;
+      if (price >= 100000) return 100;
+      if (price >= 10000) return 50;
+      if (price >= 1000) return 10;
+      if (price >= 100) return 1;
+      return 0.1;
+    };
+
+    const priceIncrement = getPriceIncrement(price);
+
+    for (let i = 1; i <= 11; i++) {
+      const orderPrice = price + priceIncrement * i;
+
+      const baseAmount = Math.floor(Math.random() * 50) + 1;
+      const volumeMultiplier = 1 - i * 0.05;
+
+      sellData.push({
+        price: Number(orderPrice.toFixed(2)),
+        amount: Math.max(1, Math.floor(baseAmount * volumeMultiplier)),
+        total: Number((orderPrice * baseAmount * volumeMultiplier).toFixed(2)),
+        type: "sell",
+      });
+    }
+
+    for (let i = 1; i <= 11; i++) {
+      const orderPrice = price - priceIncrement * i;
+
+      const baseAmount = Math.floor(Math.random() * 50) + 1;
+      const volumeMultiplier = 1 + i * 0.05;
+
+      buyData.push({
+        price: Number(Math.max(0.01, orderPrice).toFixed(2)),
+        amount: Math.floor(baseAmount * volumeMultiplier),
+        total: Number((orderPrice * baseAmount * volumeMultiplier).toFixed(2)),
+        type: "buy",
+      });
+    }
+
+    const sortedSellData = sellData.sort((a, b) => b.price - a.price);
+    const sortedBuyData = buyData.sort((a, b) => a.price - b.price);
+
+    return [...sortedSellData, ...sortedBuyData];
+  };
+
+  const orderBookData = generateOrderBookData(price);
+
   const handleBack = () => {
     if (window.history.length > 1) {
       navigate(-1); // 이전 페이지로 이동
@@ -51,7 +83,7 @@ const TradeDetails = () => {
             className="back-button"
           />
           <p className="header-title">{name}</p>
-          <p className="red">1117원</p>
+          <p className="red">{price.toLocaleString()}원</p>
           <p className="red">2.7%</p>
         </div>
       </header>

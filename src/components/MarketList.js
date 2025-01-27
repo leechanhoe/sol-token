@@ -15,8 +15,8 @@ function MarketList() {
     },
   ];
 
-  const handleNavigate = (name) => {
-    navigate(`/trade/${name}`);
+  const handleNavigate = (name, price) => {
+    navigate(`/trade/${name}?price=${price}`);
   };
 
   return (
@@ -28,7 +28,7 @@ function MarketList() {
         {markets.map((market) => (
           <li
             key={market.id}
-            onClick={() => handleNavigate(market.name)}
+            onClick={() => handleNavigate(market.name, market.price)}
             className="market-item"
           >
             <span className="name">{market.name}</span>

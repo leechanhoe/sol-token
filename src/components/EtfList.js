@@ -25,8 +25,8 @@ function EtfList() {
     },
   ];
 
-  const handleNavigate = (name) => {
-    navigate(`/trade/${name}`);
+  const handleNavigate = (name, price) => {
+    navigate(`/trade/${name}?price=${price}`);
   };
 
   return (
@@ -39,7 +39,7 @@ function EtfList() {
           <li
             key={etf.id}
             className="etf-item"
-            onClick={() => handleNavigate(etf.name)}
+            onClick={() => handleNavigate(etf.name, etf.price)}
           >
             <span className="name">{etf.name}</span>
             <span className="price">{etf.price.toLocaleString()}</span>
