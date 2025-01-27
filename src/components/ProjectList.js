@@ -9,7 +9,7 @@ function ProjectList() {
     {
       id: 1,
       projectId: "PC302124062701",
-      title: "롯데하이마트 수리서비스에 따른른 온실가스 감축 사업",
+      title: "롯데마트 수리서비스에 따른 온실가스 감축 사업",
       amount: 4000,
       date: "24.06.27 - 27.12.31",
       type: "신규",

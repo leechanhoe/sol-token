@@ -1,5 +1,41 @@
 .project-details {
   padding: 16px;
+  margin-top: 10px;
+}
+
+.project-details .title {
+  font-size: 20px;
+}
+
+.project-detail-flex {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.project-info-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.project-info-flex p {
+  font-weight: 500;
+}
+
+.map-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.project-detail-flex .map {
+  height: 18px;
 }
 
 .project-info {
@@ -43,110 +79,80 @@
   font-size: 20px;
 }
 
+.download-icon > img {
+  width: 20px;
+}
+
 .document-name {
   flex-grow: 1;
   font-size: 16px;
   color: #333;
+  font-weight: 300;
 }
 
-.download-icon {
-  color: #007bff;
-  text-decoration: none;
-  font-size: 20px;
-  margin-left: 10px;
+.project-details-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: #fff;
 }
 
-.download-icon:hover {
-  color: #0056b3;
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
+.project-status {
+  color: blue;
+  font-weight: bold;
+}
 
-  
-  .project-details-item {
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 12px;
-    background-color: #fff;
-  }
-  
-  .project-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-  }
-  
-  .project-status {
-    color: blue;
-    font-weight: bold;
-  }
-  
-  .project-code {
-    color: #666;
-  }
-  
-  .project-body p {
-    margin: 4px 0;
-  }
-  
-  .project-body strong {
-    color: #333;
-  }
-  
-  .button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 24px;
-  }
-  
-  .purchase-button {
-    background-color: #ff4d4f; /* 빨간색 */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    flex: 1;
-    margin-right: 8px; /* 버튼 간격 */
-  }
-  
-  .purchase-button:hover {
-    background-color: #d9363e;
-  }
-  
-  .sell-button {
-    background-color: #1890ff; /* 파란색 */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    flex: 1;
-    margin-left: 8px; /* 버튼 간격 */
-  }
-  
-  .sell-button:hover {
-    background-color: #096dd9;
-  }
+.project-code {
+  color: #666;
+}
 
-  .invest-button {
-    background-color: #28a745; /* 초록색 */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    flex: 1;
-  }
-  
-  .invest-button:hover {
-    background-color: #218838;
-  }
+.project-body p {
+  margin: 4px 0;
+}
 
-  .reduction-amount {
-    color: #db0fcd;
-    font-weight: bold;
-  }
+.project-body strong {
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.project-documents > ul {
+  margin-top: 16px;
+}
+
+.document-icon > img {
+  width: 20px;
+}
+
+.invest-button {
+  background: linear-gradient(135deg, #186ff2, #8a2be2);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.invest-button:hover {
+  background-color: #218838;
+}
+
+.reduction-amount {
+  color: #db0fcd;
+  font-weight: bold;
+}
