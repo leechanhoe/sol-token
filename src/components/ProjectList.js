@@ -51,14 +51,20 @@ function ProjectList() {
             {/* 첫 번째 행 */}
             <div className="row">
               <div className="col">
-                <p className="project-id">{project.projectId}</p>
-                <p className="project-title">{project.title}</p>
-                <p className="project-date">
-                  {project.date}
-                  <span className={`type ${project.type === "진행중" ? "type-in-progress" : "type-new"}`}>
+                <div className="col-flex">
+                  <span
+                    className={`type ${
+                      project.type === "진행중"
+                        ? "type-in-progress"
+                        : "type-new"
+                    }`}
+                  >
                     {project.type}
                   </span>
-                </p>
+                  <p className="project-id">{project.projectId}</p>
+                </div>
+                <p className="project-title">{project.title}</p>
+                <p className="project-date">{project.date}</p>
               </div>
               <div className="col">
                 <p className="col-title">예상 감축량</p>
