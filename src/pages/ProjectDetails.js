@@ -15,7 +15,7 @@ function ProjectDetails() {
       id: 1,
       title: "롯데마트 수리서비스에 따른 온실가스 감축 사업",
       code: "PC302124062701",
-      status: "Certification Pending",
+      status: "신규",
       type: "신규",
       location: "대한민국 (KR)",
       reductionType: "감축 / 재활용",
@@ -40,7 +40,7 @@ function ProjectDetails() {
       id: 2,
       title: "중고거래를 통한 온실가스 감축 사업",
       code: "PC090923011001",
-      status: "Inactive",
+      status: "진행중",
       type: "진행중",
       location: "대한민국 (KR)",
       reductionType: "감축 / 중고거래",
@@ -65,7 +65,7 @@ function ProjectDetails() {
       id: 3,
       title: "자전거 중고거래에 의한 온실가스 갑축사업",
       code: "PC091123020302",
-      status: "Inactive",
+      status: "진행중",
       type: "진행중",
       location: "대한민국 (KR)",
       reductionType: "감축 / 중고거래",
@@ -125,6 +125,9 @@ function ProjectDetails() {
 
         <div className="project-info">
           <p className="project-info-flex">
+            <p>프로젝트 상태</p> {project.status}
+          </p>
+          <p className="project-info-flex">
             <p>감축 / 세부분야</p> {project.reductionType}
           </p>
           <p className="project-info-flex">
@@ -142,9 +145,6 @@ function ProjectDetails() {
           </p>
           <p className="project-info-flex">
             <p>방법</p> {project.method}
-          </p>
-          <p className="project-info-flex">
-            <p>프로젝트 상태</p> {project.status}
           </p>
           <p className="project-info-flex">
             <p>프로젝트 ID</p> {project.code}
