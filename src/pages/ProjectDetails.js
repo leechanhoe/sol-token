@@ -125,9 +125,6 @@ function ProjectDetails() {
 
         <div className="project-info">
           <p className="project-info-flex">
-            <p>프로젝트 상태</p> {project.status}
-          </p>
-          <p className="project-info-flex">
             <p>감축 / 세부분야</p> {project.reductionType}
           </p>
           <p className="project-info-flex">
@@ -145,6 +142,9 @@ function ProjectDetails() {
           </p>
           <p className="project-info-flex">
             <p>방법</p> {project.method}
+          </p>
+          <p className="project-info-flex">
+            <p>프로젝트 상태</p> {project.status}
           </p>
           <p className="project-info-flex">
             <p>프로젝트 ID</p> {project.code}
