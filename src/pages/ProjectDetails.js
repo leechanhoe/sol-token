@@ -13,26 +13,26 @@ function ProjectDetails() {
   const projects = [
     {
       id: 1,
-      title: "롯데마트 수리서비스에 따른 온실가스 감축 사업",
-      code: "PC302124062701",
+      title: "화석연료 기반 차량의 전기차 전환을 통한 온실가스 감축사업",
+      code: "PC101523110901",
       status: "신규",
       type: "신규",
       location: "대한민국 (KR)",
-      reductionType: "감축 / 재활용",
-      amount: 4000,
-      dateStart: "2024.06.27",
-      dateEnd: "2027.12.31",
-      monitoringDate: "-",
-      reductionDateStart: "2023.01.01",
-      reductionDateEnd: "2027.12.31",
-      method: "대체사업의 방법론",
-      company: "롯데하이마트",
+      reductionType: "감축 / 이동수단 대체",
+      amount: 13750,
+      dateStart: "2023.11.03",
+      dateEnd: "2033.11.02",
+      monitoringDate: "1",
+      reductionDateStart: "2022.01.01",
+      reductionDateEnd: "2033.11.02",
+      method: "전기 차량 도입에 따른 화석연료 절감 사업의 방법론",
+      company: "(주)피엠그로우",
       documents: [
-        { name: "사업 계획서", url: "#" },
-        { name: "모니터링 보고서", url: "#" },
+        { name: "사업 계획서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/204/ko/%ED%94%BC%EC%97%A0%EA%B7%B8%EB%A1%9C%EC%9A%B0_%EC%82%AC%EC%97%85%EA%B3%84%ED%9A%8D%EC%84%9C.pdf" },
+        { name: "모니터링 보고서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/204/ko/%ED%94%BC%EC%97%A0%EA%B7%B8%EB%A1%9C%EC%9A%B0_%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81_%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf" },
         { name: "타당성 평가 보고서", url: "#" },
-        { name: "검증 의견서", url: "#" },
-        { name: "인증위원회 결과서", url: "#" },
+        { name: "검증 의견서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/204/ko/%5BKFQ%5D_%ED%94%BC%EC%97%A0%EA%B7%B8%EB%A1%9C%EC%9A%B0_%EA%B2%80%EC%A6%9D%EC%9D%98%EA%B2%AC%EC%84%9C.pdf" },
+        { name: "인증위원회 결과서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/204/ko/%ED%94%BC%EC%97%A0%EA%B7%B8%EB%A1%9C%EC%9A%B0_%EC%9D%B8%EC%A6%9D%EC%9C%84%EC%9B%90%ED%9A%8C_%EA%B2%B0%EA%B3%BC%EC%84%9C.pdf" },
         { name: "기타", url: "#" },
       ],
     },
@@ -54,10 +54,10 @@ function ProjectDetails() {
       company: "주식회사 중고나라",
       documents: [
         { name: "사업 계획서", url: "#" },
-        { name: "모니터링 보고서", url: "#" },
+        { name: "모니터링 보고서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/125/ko/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A9%E1%84%82%E1%85%A1%E1%84%85%E1%85%A1+%E1%84%86%E1%85%A9%E1%84%82%E1%85%B5%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC+%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5.pdf" },
         { name: "타당성 평가 보고서", url: "#" },
-        { name: "검증 의견서", url: "#" },
-        { name: "인증위원회 결과서", url: "#" },
+        { name: "검증 의견서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/125/ko/%5BKFQ%5D+%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A9%E1%84%82%E1%85%A1%E1%84%85%E1%85%A1+%E1%84%80%E1%85%A5%E1%86%B7%E1%84%8C%E1%85%B3%E1%86%BC%E1%84%8B%E1%85%B4%E1%84%80%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A5.pdf" },
+        { name: "인증위원회 결과서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/125/ko/%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%A9%E1%84%82%E1%85%A1%E1%84%85%E1%85%A1+%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%E1%84%8B%E1%85%B1%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%92%E1%85%AC+%E1%84%80%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%E1%84%89%E1%85%A5.pdf" },
         { name: "기타", url: "#" },
       ],
     },
@@ -79,10 +79,10 @@ function ProjectDetails() {
       company: "라이트브라더스",
       documents: [
         { name: "사업 계획서", url: "#" },
-        { name: "모니터링 보고서", url: "#" },
+        { name: "모니터링 보고서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/140/ko/%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%90%E1%85%B3%E1%84%87%E1%85%B3%E1%84%85%E1%85%A1%E1%84%83%E1%85%A5%E1%84%89%E1%85%B3+%E1%84%86%E1%85%A9%E1%84%82%E1%85%B5%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC+%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%E1%84%89%E1%85%A5.pdf" },
         { name: "타당성 평가 보고서", url: "#" },
-        { name: "검증 의견서", url: "#" },
-        { name: "인증위원회 결과서", url: "#" },
+        { name: "검증 의견서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/140/ko/%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%90%E1%85%B3%E1%84%87%E1%85%B3%E1%84%85%E1%85%A1%E1%84%83%E1%85%A5%E1%84%89%E1%85%B3+%E1%84%80%E1%85%A5%E1%86%B7%E1%84%8C%E1%85%B3%E1%86%BC%E1%84%8B%E1%85%B4%E1%84%80%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A5.pdf" },
+        { name: "인증위원회 결과서", url: "https://d1sjg004kl9yle.cloudfront.net/prod/project/140/ko/%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%90%E1%85%B3%E1%84%87%E1%85%B3%E1%84%85%E1%85%A1%E1%84%83%E1%85%A5%E1%84%89%E1%85%B3+%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%B3%E1%86%BC%E1%84%8B%E1%85%B1%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%92%E1%85%AC+%E1%84%80%E1%85%A7%E1%86%AF%E1%84%80%E1%85%AA%E1%84%89%E1%85%A5.pdf" },
         { name: "기타", url: "#" },
       ],
     },
@@ -159,22 +159,24 @@ function ProjectDetails() {
             <p className="title">투자관련문서</p>
           </div>
           <ul>
-            {project.documents.map((doc, index) => (
-              <li key={index} className="document-item">
-                <span className="document-icon">
-                  <img src={downloadIcon} alt="download" />
-                </span>
-                <span className="document-name">{doc.name}</span>
-                <a
-                  href={doc.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="download-icon"
-                >
-                  <img src={download} alt="download" />
-                </a>
-              </li>
-            ))}
+            {project.documents
+              .filter((doc) => doc.url !== "#") // "#"을 가진 항목은 제외
+              .map((doc, index) => (
+                <li key={index} className="document-item">
+                  <span className="document-icon">
+                    <img src={downloadIcon} alt="download" />
+                  </span>
+                  <span className="document-name">{doc.name}</span>
+                  <a
+                    href={doc.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="download-icon"
+                  >
+                    <img src={download} alt="download" />
+                  </a>
+                </li>
+              ))}
           </ul>
         </div>
         <div className="button-group">

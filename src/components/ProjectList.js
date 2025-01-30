@@ -8,10 +8,10 @@ function ProjectList() {
   const projects = [
     {
       id: 1,
-      projectId: "PC302124062701",
-      title: "롯데마트 수리서비스에 따른 온실가스 감축 사업",
-      amount: 4000,
-      date: "24.06.27 - 27.12.31",
+      projectId: "PC101523110901",
+      title: "화석연료 기반 차량의 전기차 전환을 통한 온실가스 감축사업",
+      amount: 13750,
+      date: "2023.11.03 ~ 2033.11.02",
       type: "신규",
     },
     {
