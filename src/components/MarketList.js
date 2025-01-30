@@ -5,14 +5,9 @@ import "./MarketList.css";
 function MarketList() {
   const navigate = useNavigate();
   const markets = [
-    { id: 1, name: "탄소배출권 토큰", price: 12000, change: "+2.56%" },
-    { id: 2, name: "KAU25", price: 11400, change: "+2.56%" },
-    {
-      id: 3,
-      name: "S&P GSCI Global Voluntary Carbon Liquidity Weighted (USD)",
-      price: 11400,
-      change: "+2.56%",
-    },
+    { id: 1, name: "KAU24", price: 9500, change: "+1.28%" },
+    { id: 2, name: "KOC22-27", price: 11600, change: "+2.56%" },
+    { id: 3, name: "i-KOC22-27", price: 10000, change: "+1.56%" },
   ];
 
   const handleNavigate = (name, price) => {

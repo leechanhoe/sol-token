@@ -7,21 +7,21 @@ function EtfList() {
   const etfs = [
     {
       id: 1,
-      name: "SOL 글로벌탄소배출권선물ICE(합성)",
-      price: 11960,
-      change: "+0.55%",
+      name: "SOL CER 프로젝트 3년",
+      price: 12500,
+      change: "+0.12%",
     },
     {
       id: 2,
-      name: "SOL 유럽탄소배출권선물S&P(H)",
-      price: 11700,
-      change: "+2.14%",
+      name: "SOL CER 프로젝트 제조업",
+      price: 11600,
+      change: "-0.88%",
     },
     {
       id: 3,
-      name: "SOL 유럽탄소배출권선물인버스ICE(H)",
-      price: 10465,
-      change: "-2.47%",
+      name: "SOL 글로벌탄소배출권선물ICE(합성)",
+      price: 11960,
+      change: "+0.55%",
     },
   ];
 
