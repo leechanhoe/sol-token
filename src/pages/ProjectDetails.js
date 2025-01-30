@@ -13,7 +13,7 @@ function ProjectDetails() {
   const projects = [
     {
       id: 1,
-      title: "화석연료 기반 차량의 전기차 전환을 통한 온실가스 감축사업",
+      title: "전기차 전환을 통한 온실가스 감축사업",
       code: "PC101523110901",
       status: "신규",
       type: "신규",
@@ -63,7 +63,7 @@ function ProjectDetails() {
     },
     {
       id: 3,
-      title: "자전거 중고거래에 의한 온실가스 갑축사업",
+      title: "자전거 중고거래에 의한 온실가스 감축사업",
       code: "PC091123020302",
       status: "진행중",
       type: "진행중",

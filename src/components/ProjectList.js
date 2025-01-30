@@ -9,7 +9,7 @@ function ProjectList() {
     {
       id: 1,
       projectId: "PC101523110901",
-      title: "화석연료 기반 차량의 전기차 전환을 통한 온실가스 감축사업",
+      title: "전기차 전환을 통한 온실가스 감축사업",
       amount: 13750,
       date: "2023.11.03 ~ 2033.11.02",
       type: "신규",
@@ -25,7 +25,7 @@ function ProjectList() {
     {
       id: 3,
       projectId: "PC091123020302",
-      title: "자전거 중고거래에 의한 온실가스 갑축사업",
+      title: "자전거 중고거래에 의한 온실가스 감축사업",
       amount: 3380,
       date: "23.01.16 - 33.01.15",
       type: "진행중",
