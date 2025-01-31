@@ -15,7 +15,7 @@ function EtfList() {
       id: 2,
       name: "SOL CER 프로젝트 제조업",
       price: 11600,
-      change: "-0.88%",
+      change: "+0.88%",
     },
     {
       id: 3,
